@@ -23,7 +23,7 @@ for r in resps:
 AMOUNT -= n
 while AMOUNT > 0:
     print(str(AMOUNT) + ' left to go')
-    time.sleep(1)
+    time.sleep(2)
     n = 100 if AMOUNT >= 100 else AMOUNT
     resps = discord.get(URL + '?before={}&limit={}'.format(LAST_ID, n)).json()
     for r in resps:
